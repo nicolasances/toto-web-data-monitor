@@ -1,0 +1,5 @@
+
+.dump-schedules-container {margin: 12px;}
+.dump-schedules-container .dump-schedule-container {border: 1px solid #efefef; border-radius: 30px;}
+.dump-schedules-container .dump-schedule-container .env {padding: 6px 12px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; font-size: 22px; font-weight: bold; background: #4DB6AC;}
+.dump-schedules-container .dump-schedule-container .cron {font-size: 14px; margin: 0 6px;}

@@ -1,0 +1,31 @@
+
+<div layout="column" layout-gt-md="row" flex id="dashboard-row-1">
+
+  <!-- Group of 2 cards -->
+  <div layout="column" layout-gt-xs="row" flex>
+
+    <div layout="column" class="card small red" md-whiteframe="1">
+      <div layout="column" class="header">
+        <div class="title normal-text" flex>Scheduled dumps</div>
+        <div class="title tiny-text" flex>{{mongoDumpSchedules.length}} {{mongoDumpSchedules ? 'schedule' : ''}}{{mongoDumpSchedules.length > 1 ? 's' : ''}}</div>
+      </div>
+      <div class="dump-schedules-container" layout="column">
+          <div class="dump-schedule-container" ng-repeat="schedule in mongoDumpSchedules" layout="row">
+            <div class="env" layout="column">
+              <div flex></div>
+              {{schedule.env}}
+              <div flex></div>
+            </div>
+            <div class="cron" flex layout="column">
+              <div flex></div>
+              {{schedule.cron}}
+              <div flex></div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</div>
