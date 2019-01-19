@@ -9,7 +9,7 @@ MongoDumpServiceModule.factory('MongoDumpService', [ '$http', '$rootScope', '$lo
 		 */
 		getSchedules : function() {
 
-			return $http.get(apiUrl + '/mongo-dump-scheduler/schedules');
+			return $http.get(apiUrl + '/mongo/dump/scheduler/schedules');
 
 		}
 
